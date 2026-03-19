@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>DENTRION GUIDE LINE</title>
+<link rel="stylesheet" href="css/main.css">
+<link href="img/icon.png" rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body>
+
+<header>
+    <img src="img/logo.png" alt="로고">
+    <h1>DENTRION GUIDE LINE</h1>
+</header>
+
+<div class="container">
+
+    <div class="menu">
+        <a href="notice.html">공지사항</a>
+
+        <a href="dashboard.html">대시보드</a>
+
+        <div class="request-container">
+        <a onclick="toggleMenuA()" class="request-main-btn">의뢰서</a>
+        <div class="requestmenu" id="requestmenu">
+            <a href="request_add.html">의뢰서 등록</a>
+            <a href="request_manage.html">의뢰서 관리</a>
+            <a href="request_edit.html">의뢰서 수정</a>
+            <a href="release_history.html">출고 내역</a>
+        </div>
+        </div>
+
+        <div class="gold-container">
+        <a onclick="toggleMenuB()" class="gold-main-btn">골드</a>
+        <div class="goldmenu" id="goldmenu">
+            <a href="partner_gold.html">파트너 골드 관리</a>
+            <a href="factory_gold.html">제조소 골드 관리</a>
+        </div>
+        </div>
+
+        <div class="calculate-container">
+        <a onclick="toggleMenuC()" class="calculate-main-btn">정산</a>
+        <div class="calculatemenu" id="calculatemenu">
+            <a href="writing_statement.html">거래명세서 작성</a>
+            <a href="manage_statement.html">거래명세서 관리</a>
+            <a href="manage_pay.html">결제 관리</a>
+            <a href="manage_supplier.html">공급자 관리</a>
+        </div>
+        </div>
+        
+        <a href="manage-account.html">운영</a>
+
+        <div class="procedure-container">
+        <a onclick="toggleMenuD()" class="procedure-main-btn">공정 관리</a>
+        <div class="proceduremenu" id="proceduremenu">
+            <a href="manage_partner.html">파트너 관리</a>
+            <a href="manage_medical.html">수가 관리</a>
+            <a href="release_history.html#sec6">배송 관리</a>
+        </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+   2026 Dentrion Guide
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

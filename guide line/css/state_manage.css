@@ -1,0 +1,277 @@
+h1 {
+    color: #44c18d;
+    text-align:center;
+}
+h2 {
+    color: #44c18d;
+    text-align: center;
+}
+h3 {
+    color: #44c18d;
+    text-align: center;
+}
+.required {
+    color: red;
+}
+.optional {
+    color: green;
+}
+.hint {
+    color: #888;
+}
+
+header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.back-btn{
+    position: absolute;
+    left: 20px;   
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    text-align:center;
+}
+
+details {
+    text-align: center;
+}
+
+.manage-box {
+    background-color: #f5f5f5;
+}
+
+.toc{
+    position:fixed;
+    right:30px;
+    top:120px;
+    width:200px;
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+
+.toc a{
+    display:block;
+    padding:6px;
+    text-decoration:none;
+    color:#444;
+    font-size:13px;
+}
+
+.toc a:hover{
+    background: lightgrey;
+    border-radius:5px;
+}
+
+.toc a.active{
+    color: #b0e5cf;
+    font-weight:bold;
+}
+
+  .content { 
+    padding:30px; 
+    max-width:1300px;
+    margin:0 auto; 
+}
+
+#manage1 {
+    width : 900px;
+    height:  440px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage111 {
+    width : 260px;
+    height:  50px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage121 {
+    width : 200px;
+    height:  50px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage122 {
+    width : 250px;
+    height:  110px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage123 {
+    width : 360px;
+    height:  40px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage124 {
+    width : 650px;
+    height:  57px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage125 {
+    width : 710px;
+    height:  370px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage126 {
+    width : 350px;
+    height:  60px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage131 {
+    width : 189px;
+    height:  52px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage132 {
+    width : 247px;
+    height:  116px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage133 {
+    width : 366px;
+    height:  44px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage134 {
+    width : 650px;
+    height:  57px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage135 {
+    width : 721px;
+    height:  362px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage136 {
+    width : 304px;
+    height:  225px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage137 {
+    width : 478px;
+    height:  59px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage1371 {
+    width : 682px;
+    height:  252px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage1372 {
+    width : 709px;
+    height:  634px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage141 {
+    width : 189px;
+    height:  52px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage145 {
+    width : 878px;
+    height:  345px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage151 {
+    width : 900px;
+    height:  440px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage1512 {
+    width : 900px;
+    height:  440px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage152 {
+    width : 900px;
+    height:  137px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage1521 {
+    width : 1200px;
+    height:  137px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage153 {
+    width : 1000px;
+    height:  492px;
+    display: block;
+    margin: 0 auto;
+}
+
+#manage161 {
+    width : 879px;
+    height:  1200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.menu-section {
+    display: flex;
+    align-items: flex-start; /* 위쪽 정렬 */
+    gap: 10px; /* 이미지와 텍스트 사이 간격 */
+}
+
+.menu-section img {
+    width: 300px; /* 원하는 크기로 조절 */
+    height: auto;
+}
+
+.menu-text {
+    flex: 1; 
+}

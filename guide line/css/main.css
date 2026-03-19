@@ -1,0 +1,177 @@
+body{
+    margin:0;
+    font-family: 'Pretendard', sans-serif;
+    background: #f5f7fb;
+}
+
+header{
+    background: white;
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-bottom:1px solid #ddd;
+    position:relative;
+}
+
+header img{
+    width:140px;
+    position:absolute;
+    left:30px;
+}
+
+header h1{
+    color:#44c18d;
+    font-size:28px;
+}
+
+
+.container{
+    max-width:1000px;
+    margin:80px auto;
+}
+
+
+.menu{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+    align-items: start;
+}
+
+
+.menu a{
+    text-decoration:none;
+    padding:35px;
+    font-size:20px;
+    background:white;
+    color:#333;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:all 0.2s ease;
+}
+
+
+
+.menu a:hover{
+    transform:translateY(-5px);
+    background:#44c18d;
+    color:white;
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+
+footer{        
+    text-align: center;     
+    color: gray;
+    font-size: 14px;
+}
+
+.request-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.request-main-btn {
+    display: block; 
+    cursor: pointer;
+}
+
+
+.requestmenu {
+    display: none; 
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.requestmenu a {
+    padding: 15px !important;
+    font-size: 16px !important;
+    background: #f9f9f9;
+}
+
+.gold-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.gold-main-btn {
+    display: block; 
+    cursor: pointer;
+}
+
+
+.goldmenu {
+    display: none; 
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.goldmenu a {
+    padding: 15px !important;
+    font-size: 16px !important;
+    background: #f9f9f9;
+}
+
+.calculate-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.calculate-main-btn {
+    display: block; 
+    cursor: pointer;
+}
+
+
+.calculatemenu {
+    display: none; 
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.calculatemenu a {
+    padding: 15px !important;
+    font-size: 16px !important;
+    background: #f9f9f9;
+}
+
+.procedure-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.procedure-main-btn {
+    display: block; 
+    cursor: pointer;
+}
+
+
+.proceduremenu {
+    display: none; 
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.proceduremenu a {
+    padding: 15px !important;
+    font-size: 16px !important;
+    background: #f9f9f9;
+}

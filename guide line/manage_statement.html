@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>거래명세서 관리</title>
+    <link rel="stylesheet" href="css/state_manage.css">
+    <link href="img/icon.png" rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+    <a href="main.html" class="back-btn">←</a>
+    <h1>DENTRION GUIDE LINE</h1>
+    </header>
+
+    <div class="content">
+    <h1 id="sec1">1. 거래명세서 관리</h1>
+    <p>이 화면은 거래명세서를 수정 및 관리하는 화면으로 청구된 의뢰 목록과 금액을 상태별로 확인할 수 있습니다.</p>
+    <img id="manage1" src="img/state_manage/manage1.png" alt="거래명세서 관리">
+    <h2 id="sec2">1-1. 거래명세서 상태</h2>
+    <div class="manage-box">
+    <h3 id="sec3">1-1-1.거래명세서 상태</h3>
+    <img id="manage111" src="img/state_manage/manage1-1-1.png" alt="거래명세서 상태">
+    <p>1.<strong>[작성중]</strong> : 의뢰서 등록 시 자동으로 해당 기간 거래명세서가 생성되고 의뢰서가 쌓이는걸 확인할 수 있습니다.</p>
+    <p>2.<strong>[검토중]</strong> : 매출 확정 전, 검토 단계인 거래명세서를 확인할 수 있습니다.</p>
+    <p>3.<strong>[발급 완료]</strong> : 매출 확정된 거래명세서를 확인할 수 있습니다.</p>
+    </div>
+    <br><br>
+    
+    <h2 id="sec3">1-2.작성중</h2>
+    <div class="manage-box">
+        <h3 id="sec4">1-2-1.공급자</h3>
+        <p>원하는 공급자의 거래명세서만 확인할 수 있습니다.</p>
+        <img id="manage121" src="img/state_manage/manage1-2-1.png" alt="공급자">
+        <br>
+
+        <h3 id="sec5">1-2-2.조회 기간</h3>
+        <p>원하는 기간의 거래명세서를 상세 검색할 수 있습니다.</p>
+        <img id="manage122" src="img/state_manage/manage1-2-2.png" alt="조회 기간">
+        <br>
+
+        <h3 id="sec6">1-2-3.파트너 검색</h3>
+        <p>원하는 파트너의 거래명세서만 확인할 수 있습니다.</p>
+        <img id="manage123" src="img/state_manage/manage1-2-3.png" alt="파트너 검색">
+        <br>
+
+        <h3 id="sec7">1-2-4.초기화</h3>
+        <p>조회 기간 또는 파트너 선택 시 초기화 버튼이 생성되며, 클릭 시 필터 값이 초기화됩니다.</p>
+        <img id="manage124" src="img/state_manage/manage1-2-4.png" alt="초기화">
+        <br>
+
+        <h3 id="sec8">1-2-5.거래명세서 등록</h3>
+        <p>조회기간 기준 내림차순으로 정렬되며 동일한 기간 내에서는 최신순으로 정렬됩니다.</p>
+        <img id="manage125" src="img/state_manage/manage1-2-5.png" alt="거래명세서 등록">
+        <p>1.<strong>[체크 박스]</strong> : 거래명세서를 선택하면 선택된 수량이 표시되며 거래명세서를 일괄 작성 완료 및 거래명세서 인쇄를 할 수 있습니다.</p> 
+        <p>선택 해제 버튼을 클릭하면 선택된 거래명세서가 모두 해제됩니다.</p>
+        <p>2.<strong>[조회 기간]</strong> : 거래명세서의 거래 기간으로 조회 종료일 기준 내림차순으로 정렬됩니다</p>
+        <p>3.<strong>[파트너]</strong> : 거래명세서의 청구되는 파트너명입니다.</p>
+        <p>4.<strong>[공급자]</strong> : 파트너와 연결된 공급자명입니다.</p>
+        <p>5.<strong>[청구 금액]</strong> : 모든 합산 내역을 반영한 최종 결제 금액입니다.</p>
+        <p>6.<strong>[상세 보기]</strong> : 거래명세서의 상세 내역을 확인할 수 있습니다.</p>
+        <p>7.<strong>[삭제]</strong> : 거래명세서를 삭제할 수 있습니다. 거래명세서에 포함된 의뢰서는 삭제되지 않습니다.</p>
+        <br>
+
+        <h3 id="sec9">1-2-6.인쇄물</h3>
+        <p>[작성 중] 상태 우측 하단에 거래명세표, 거래명세서 전체 인쇄 기능을 사용할 수 있습니다.</p>
+        <img id="manage126" src="img/state_manage/manage1-2-6.png" alt="인쇄물">
+        <p><strong>[거래명세표]</strong> : 날짜 지정하여 하루 거래명세표를 출력할 수 있습니다.</p>
+        <details>
+        <summary><strong>거래명세표 인쇄 예시</strong></summary>
+        <video width="800" controls>
+        <source src="img/state_manage/state_print.mp4" type="video/mp4">
+        </video>
+        </details>
+        <br>
+        <p><strong>[전체 인쇄]</strong> : 지정한 조회 기간내에 있는 거래명세서를 모두 인쇄 할 수 있습니다.</p>
+        <details>
+        <summary><strong>전체 인쇄 예시</strong></summary>
+        <video width="800" controls>
+        <source src="img/state_manage/state_all_print.mp4" type="video/mp4">
+        </video>
+        </details>
+    </div>
+    <br><br>
+
+    <h2 id="sec10">1-3.검토중</h2>
+    <div class="manage-box">
+    <h3 id="sec11">1-3-1.공급자</h3>
+    <p>원하는 공급자의 거래명세서만 확인할 수 있습니다.</p>
+    <img id="manage131" src="img/state_manage/manage1-3-1.png" alt="인쇄물">
+    <br>
+
+    <h3 id="sec12">1-3-2.조회 기간</h3>
+    <p>접속일 기준 1일~말일로 기본값이 설정되있습니다.</p>
+    <p>원하는 기간의 거래명세서를 상세 검색할 수 있습니다.</p>
+    <img id="manage132" src="img/state_manage/manage1-3-2.png" alt="조회기간">
+    <br>
+
+    <h3 id="sec13">1-3-3.파트너 검색</h3>
+    <p>원하는 파트너의 거래명세서만 확인할 수 있습니다.</p>
+    <img id="manage133" src="img/state_manage/manage1-3-3.png" alt="파트너 검색">
+    <br>
+
+    <h3 id="sec14">1-3-4.초기화</h3>
+    <p>조회 기간 또는 파트너 선택 시 초기화 버튼이 생성되며, 클릭 시 필터 값이 초기화됩니다.</p>
+    <img id="manage134" src="img/state_manage/manage1-3-4.png" alt="초기화">
+    <br>
+
+    <h3 id="sec15">1-3-5.거래명세서 목록</h3>
+    <p>조회 기간 기준 내림차순으로 정렬되며 동일한 기간 내에서는 최신순으로 정렬됩니다.</p>
+    <p>거래명세서에 포함된 의뢰 중 포장 완료 처리되지 않은 의뢰가 있을 경우, 해당 의뢰는 상단에 붉은색으로 강조 표시되어 우선 표시됩니다.</p>
+    <p>모든 의뢰가 포장 완료 처리되면, 표시가 해제되며 목록은 기존 정렬 방식으로 복귀합니다.</p>
+    <img id="manage135" src="img/state_manage/manage1-3-5.png" alt="거래명세서 목록">
+    <p>1.<strong>[체크 박스]</strong> : 거래명세서를 선택하면 선택된 수량이 표시되며 거래명세서를 일괄 매출 확정 및 거래명세서 인쇄를 할 수 있습니다.</p>
+    <p>선택 해제 버튼을 클릭하면 선택된 거래명세서가 모두 해제됩니다.</p>
+    <p>2.<strong>[조회 기간] </strong> : 거래명세서의 거래 기간으로 조회 종료일 기준 내림차순으로 정렬됩니다.</p>
+    <p>3.<strong>[파트너]</strong> : 거래명세서의 청구되는 파트너명입니다.</p>
+    <p>4.<strong>[공급자]</strong> : 파트너와 연결된 공급자명입니다.</p>
+    <p>5.<strong>[청구 금액]</strong> : 모든 합산 내역을 반영한 최종 결제 금액입니다.</p>
+    <p>6.<strong>[상세 보기]</strong> : 거래명세서의 상세 내역을 확인할 수 있습니다.</p>
+    <p>7.<strong>[삭제]</strong> : 거래명세서를 삭제할 수 있습니다. 거래명세서에 포함된 의뢰서는 삭제되지 않습니다.</p>
+    <br>
+    
+    <h3 id="sec16">1-3-6.매출 확정</h3>
+    <p>거래명세서 검토가 끝난 뒤에 매출 확정을 하여 [발급 완료] 처리를 할 수 있습니다.</p>
+    <img id="manage136" src="img/state_manage/manage1-3-6.png" alt="매출 확정">
+    <p>1.<strong>[매출일]</strong> : 거래명세서의 매출이 확정된 일자입니다.</p>
+    <p>2.<strong>[적요]</strong> : 거래명세서의 매출 확정 시 입력한 내용입니다.</p>
+    <p>3.<strong>[확정]</strong> : 모든 입력값을 작성 시 확정 버튼이 활성화됩니다.</p>
+    <br>
+
+    <h3 id="sec17">1-3-7.인쇄물</h3>
+    <p>[검토 중] 상태 우측 하단에 거래명세표, 거래명세서 전체 인쇄 기능을 사용할 수 있습니다.</p>
+    <img id="manage137" src="img/state_manage/manage1-3-7.png" alt="인쇄물">
+    <p>1.<strong>[매출전표]</strong> : 지정한 조회 기간내에 있는 거래명세서의 매출전표를 출력할 수 있습니다.</p>
+    <details>
+        <summary><strong>매출전표 인쇄 예시</strong></summary>
+        <img id="manage1371" src="img/state_manage/manage1-3-7_1.png" alt="매출전표">
+        </details>
+    <p>2.<strong>[품목별 매출표]</strong> : 지정한 조회 기간내에 있는 거래명세서의 품목별 매출표를 출력할 수 있습니다.</p>
+    <details>
+        <summary><strong>매출전표 인쇄 예시</strong></summary>
+        <img id="manage1372" src="img/state_manage/manage1-3-7_2.png" alt="매출전표">
+        </details>
+    <p>3.<strong>[전체 인쇄]</strong> : 지정한 조회 기간내에 있는 거래명세서를 모두 인쇄 할 수 있습니다.</p>
+    <details>
+        <summary><strong>전체 인쇄 예시</strong></summary>
+        <video width="800" controls>
+        <source src="img/state_manage/state_all_print2.mp4" type="video/mp4">
+        </video>
+        </details>
+    </div>
+    <br><br>
+
+    <h2 id="sec18">1-4.발급 완료</h2>
+    <div class="manage-box">
+    <h3 id="sec19">1-4-1.공급자</h3>
+    <p>원하는 공급자의 거래명세서만 확인할 수 있습니다.</p>
+    <img id="manage141" src="img/state_manage/manage1-4-1.png" alt="공급자">
+    <br>
+
+    <h3 id="sec20">1-4-2.매출일 조회</h3>
+    <p>원하는 기간의 매출 확정된 거래명세서를 상세 검색할 수 있습니다.</p>
+    <img id="manage132" src="img/state_manage/manage1-3-2.png" alt="조회기간">
+    <br>
+
+    <h3 id="sec21">1-4-3.파트너 검색</h3>
+    <p>원하는 파트너의 거래명세서만 확인할 수 있습니다.</p>
+    <img id="manage133" src="img/state_manage/manage1-3-3.png" alt="파트너 검색">
+    <br>
+
+    <h3 id="sec22">1-4-4.초기화</h3>
+    <p>조회 기간 또는 파트너 선택 시 초기화 버튼이 생성되며, 클릭 시 필터 값이 초기화됩니다.</p>
+    <img id="manage134" src="img/state_manage/manage1-3-4.png" alt="초기화">
+    <br>
+
+    <h3 id="sec23">1-4-5.거래명세서 목록</h3>
+    <p>매출일 기준 내림차순으로 정렬되며 동일한 기간 내에서는 최신순으로 정렬됩니다.</p>
+    <p>거래명세서에 포함된 의뢰 중 포장 완료 처리되지 않은 의뢰가 있을 경우, 해당 의뢰는 상단에 붉은색으로 강조 표시되어 우선 표시됩니다.</p>
+    <p>모든 의뢰가 포장 완료 처리되면, 표시가 해제되며 목록은 기존 정렬 방식으로 복귀합니다.</p>
+    <img id="manage145" src="img/state_manage/manage1-4-5.png" alt="거래명세서 등록">
+    <p>1.<strong>[체크박스]</strong>: 거래명세서를 선택하면 선택된 수량이 표시되며 거래명세서를 일괄 인쇄할 수 있습니다.</p>
+    <p>선택 해제 버튼을 클릭하면 선택된 거래명세서가 모두 해제됩니다.</p>
+    <p>a.<strong>매출 취소</strong> : 일괄 매출 취소가 가능하지만 이미 결제 처리된 거래명세서는 매출 취소가 불가능합니다.</p>
+    <p>b.<strong>적요 수정</strong> : 일괄 적용 수정이 불가능합니다.</p>
+    <p>2.<strong>[매출일]</strong> : 거래명세서의 매출이 확정된 일자입니다.</p>
+    <p>3.<strong>[적요]</strong> : 거래명세서의 매출 확정 시 입력한 내용입니다.</p>
+    <p>4.<strong>[조회 기간]</strong> : 거래명세서의 거래 기간입니다.</p>
+    <p>5.<strong>[파트너]</strong> : 거래명세서의 청구되는 파트너명입니다.</p>
+    <p>6.<strong>[공급자]</strong> : 파트너와 연결된 공급자명입니다.</p>
+    <p>7.<strong>[청구 금액]</strong> : 모든 합산 내역을 반영한 최종 결제 금액입니다.</p>
+    <p>8.<strong>[상세 보기]</strong> : 거래명세서의 상세 내역을 확인할 수 있습니다.</p>
+    <br>
+
+    <h3 id="sec24">1-4-6.인쇄물</h3>
+    <p>[발급 완료] 상태 우측 하단에 거래명세표, 거래명세서 전체 인쇄 기능을 사용할 수 있습니다.</p>
+    <p><strong>[매출전표]</strong> : 지정한 조회 기간내에 있는 거래명세서의 매출전표를 출력할 수 있습니다.</p>
+    <p><strong>[품목별 매출표]</strong> : 지정한 조회 기간내에 있는 거래명세서의 품목별 매출표를 출력할 수 있습니다.</p>
+    <p><strong>[전체 인쇄]</strong> : 지정한 조회 기간내에 있는 거래명세서를 모두 인쇄 할 수 있습니다.</p>
+    <p><strong class="hint">(인쇄 방식은 검토중과 동일함으로 예시 생략)</strong></p>
+    </div>
+    <br><br>
+
+    <h2 id="sec25">1-5.거래명세서 상세 보기</h2>
+    <div class="manage-box">
+    <h3 id="sec26">1-5-1.상태별 상세 보기</h3>
+    <p><strong>[작성 중]</strong></p>
+    <p>해당 거래명세서의 의뢰가 자동으로 쌓이는 상태이기 때문에 <strong>포장 미완료, 히스토리 기능은 확인할 수 없습니다.</strong></p>
+    <img id="manage151" src="img/state_manage/manage1-5-1.png" alt="작성중">
+    <br>
+    <p><strong>[검토 중]</strong></p>
+    <p>작성 중 상태에서 작성 완료 처리되어 검토 중인 거래명세서의 경우 수정 사항이 있을 때 <strong>히스토리 기능과 포장 미처리 기능을 사용할 수 있습니다.</strong></p>
+    <img id="manage1512" src="img/state_manage/manage1-5-1_3.png" alt="검토중">
+    <br>
+
+    <p><strong>[발급 완료]</strong></p>
+    <p>매출 확정 처리된 거래명세서 상세 보기의 경우 <strong>비고란 및 의뢰서 수정은 가능하지만 청구 금액에 대한 상세 금액은 수정을 할 수 없습니다.</strong></p>
+    <p>상세 보기에서 청구 금액이 수정 되었어도 거래명세서 관리 화면에서는 매출 확정된 시점의 청구 금액으로 표시됩니다.</p>
+    <p>청구 금액을 통일하기 위해 매출 취소 후 다시 매출 확정을 해야합니다.</p>
+    <img id="manage1512" src="img/state_manage/manage1-5-1_2.png" alt="발급 완료">
+    <br>
+
+    <h3 id="sec27">1-5-2.기능</h3>
+    <img id="manage152" src="img/state_manage/manage1-5-2.png" alt="기능">
+    <p>1.<strong>[파트너]</strong> : 거래명세서의 치과 정보입니다.</p>
+    <p>2.<strong>[조회기간]</strong> : 거래명세서의 거래 기간입니다.</p>
+    <p>3.<strong>[공급자]</strong> : 파트너와 연결된 공급자명입니다.</p>
+    <p>4.<strong>[엑셀 다운로드]</strong> : 거래명세서를 엑셀 형식으로 인쇄 또는 저장이 가능합니다.</p>
+    <p>5.<strong>[인쇄]</strong> : 거래명세서를 A4용지 인쇄 또는 PDF로 저장이 가능합니다.</p>
+    <p>6.<strong>[히스토리]</strong> : 거래명세서 또는 의뢰서 수정 내역이 있을 경우 과거 기록을 확인할 수 있으며 매출 확정 및 취소 시점도 확인할 수 있습니다.</p>
+    <details>
+        <summary><strong>히스토리 예시</strong></summary>
+        <img id="manage1521" src="img/state_manage/manage1-5-2_1.png" alt="히스토리">
+        </details>
+    <p>7.<strong>[비고]</strong> : 거래명세서의 참고사항을 확인할 수 있으며 거래명세서 출력 시 같이 출력됩니다.</p>
+    <p>8.<strong>[검색]</strong> : 거래명세서 내 확인하고 싶은 특정 의뢰 또는 기간을 검색해 찾아볼 수 있습니다.</p>
+    <br>
+
+    <h3 id="sec28">1-5-3.상세 정보</h3>
+    <img id="manage153" src="img/state_manage/manage1-5-3.png" alt="상세보기">
+    <p>1.<strong>[의뢰서 목록]</strong> : 거래명세서에 포함된 의뢰서들의 정보를 확인할 수 있습니다.</p>
+    <p>2.<strong>[의뢰서 수정]</strong> : 의뢰서 수정이 가능합니다.</p>
+    <p>3.<strong>[의뢰서 건수]</strong> : 해당 거래명세서에 포함된 의뢰서의 총 건수를 확인할 수 있습니다.</p>
+    <p>4.<strong>[전월 차액]</strong> : 보철물 의뢰 외에 추가로 청구된 내역을 확인할 수 있습니다.</p>
+    <p>5.<strong>[거래명세서 등록]</strong> : 수정 사항이 있는 경우 버튼이 활성화되며 저장이 됩니다.</p>
+    <br>
+
+    <h3 id="sec29">1-5-4.금액 상세 정보</h3>
+    <div class="menu-section">
+    <img id="manage154" src="img/state_manage/manage1-5-4.png" alt="금액 상세 정보">
+    <div class="menu-text">
+    <p>1.<strong>[기공합계]</strong> : 청구된 기공물의 총 금액입니다.</p><br>
+    <p>2.<strong>[기공 할인율]</strong> : 기공합계에 적용되는 할인 비율이며 수기로 할인율을 입력이 가능합니다.</p><br>
+    <p>3.<strong>[골드합계]</strong> : 청구된 골드 사용 금액의 합계입니다.</p><br>
+    <p>4.<strong>[전월차액]</strong> : 보철물 의뢰 외에 추가로 청구된 금액입니다.</p><br>
+    <p>5.<strong>[합계금액]</strong> : 기공합계, 기공할인율, 골드합계, 전월차액을 모두 반영한 총 금액입니다.</p><br>
+    <p>6.<strong>[할인금액]</strong> : 합계금액 기준으로 적용된 할인 금액이며 수기로 할인 금액을 입력이 가능합니다.</p><br>
+    <p>7.<strong>[청구금액]</strong> : 조회 기간 내 모든 내역을 합산한 결제 금액입니다.</p><br>
+    <p>8.<strong>[미수금]</strong> : 이전 거래에서 결제되지 않은 금액으로 청구금액에 포함되어 최종 청구됩니다.</p><br>
+    <p>9.<strong>[선수금]</strong> : 미리 결제해 둔 금액으로 청구금액에 반영되어 최종 청구됩니다.</p><br>
+    </div>
+    </div>
+    </div>
+    <br><br>
+
+    <h2 id="sec30">1-6.거래명세서 인쇄 폼</h2>
+    <div class="manage-box">
+    <p>거래명세서는 A4 용지로 출력 또는 PDF 파일로 저장이 가능합니다.</p>
+    <p>전월 차액이 있는 경우와 없는 경우의 거래명세서 인쇄 폼이 다릅니다.</p>
+    <details>
+        <summary><strong>전월 차액이 있는 경우 예시</strong></summary>
+        <p>처음 페이지에 전월차액 목록이 표시됩니다.</p>
+        <p>두번째 페이지부터 의뢰서 목록이 표시됩니다.</p>
+        <p>마지막 페이지에 비고 내용이 표시됩니다.</p>
+        <img id="manage161" src="img/state_manage/manage1-6-1.png" alt="매출전표">
+        </details>
+    </div>
+    </div>
+    <div class="toc">
+  <a href="#sec1">1.거래명세서 관리</a>
+  <a href="#sec2">1-1.기능 설명</a>  
+  <a href="#sec3">1-1-1.거래명세서 상태</a>
+  <a href="#sec4">1-2. 작성중</a>
+  <a href="#sec5">1-2-1.공급자</a>
+  <a href="#sec6">1-2-2.조회 기간</a>
+  <a href="#sec7">1-2-3.파트너 검색</a>  
+  <a href="#sec8">1-2-4.초기화</a>
+  <a href="#sec9">1-2-5.거래명세서 목록</a>
+  <a href="#sec10">1-2-6.인쇄물</a>  
+  <a href="#sec11">1-3.검토중</a>
+  <a href="#sec12">1-3-1.공급자</a>  
+  <a href="#sec13">1-3-2.조회 기간</a>
+  <a href="#sec14">1-3-3.파트너 검색</a>
+  <a href="#sec15">1-3-4.초기화</a>  
+  <a href="#sec16">1-3-5.거래명세서 목록</a>
+  <a href="#sec17">1-3-6.매출 확정</a>  
+  <a href="#sec18">1-3-7.인쇄물</a>
+  <a href="#sec19">1-4.발급완료</a>
+  <a href="#sec20">1-4-1.공급자</a>  
+  <a href="#sec21">1-4-2.매출일 조회</a>
+  <a href="#sec22">1-4-3.파트너 검색</a>  
+  <a href="#sec23">1-4-4.초기화</a>
+  <a href="#sec24">1-4-5.거래명세서 목록</a>
+  <a href="#sec25">1-4-6.인쇄물</a>  
+  <a href="#sec26">1-5.거래명세서 상세 보기</a>
+  <a href="#sec27">1-5-1.상태별 상세 보기</a>  
+  <a href="#sec28">1-5-2. 기능</a>
+  <a href="#sec29">1-5-3. 상세 정보</a>
+  <a href="#sec30">1-6. 거래명세서 인쇄 폼</a>      
+    </div>
+    <script src="js/public.js"></script>
+</body>
+</html>

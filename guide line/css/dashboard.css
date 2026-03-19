@@ -1,0 +1,130 @@
+h1 {
+    color: #44c18d;
+    text-align:center;
+}
+h2 {
+    color: #44c18d;
+    text-align: center;
+}
+h3 {
+    color: #44c18d;
+    text-align: center;
+}
+.required {
+    color: red;
+}
+.optional {
+    color: green;
+}
+.hint {
+    color: #888;
+}
+
+header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.back-btn{
+    position: absolute;
+    left: 20px;   
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    text-align:center;
+}
+
+details {
+    text-align: center;
+}
+
+.dashboard-box {
+    background-color: #f5f5f5;
+}
+
+.toc{
+    position:fixed;
+    right:30px;
+    top:120px;
+    width:200px;
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+
+.toc a{
+    display:block;
+    padding:6px;
+    text-decoration:none;
+    color:#444;
+    font-size:13px;
+}
+
+.toc a:hover{
+    background: lightgrey;
+    border-radius:5px;
+}
+
+.toc a.active{
+    color: #b0e5cf;
+    font-weight:bold;
+}
+
+.content { 
+    padding:30px; 
+    max-width:1300px;
+    margin:0 auto; 
+}
+
+#dash11 {
+    width: 360px;
+    height: 515px;
+    display: block;
+    margin: 0 auto;   
+}
+
+#dash12 {
+    width: 660px;
+    height: 515px;
+    display: block;
+    margin: 0 auto;   
+}
+
+#dash13 {
+    width: 900px;
+    height: 520px;
+    display: block;
+    margin: 0 auto;
+}
+
+#dash14 {
+    width: 250px;
+    height: 817px;
+    display: block;
+    margin: 0 auto;
+}
+
+.menu-section {
+    display: flex;
+    align-items: flex-start; /* 위쪽 정렬 */
+    gap: 10px; /* 이미지와 텍스트 사이 간격 */
+}
+
+.menu-section img {
+    width: 300px; /* 원하는 크기로 조절 */
+    height: auto;
+}
+
+.menu-text {
+    flex: 0.8; 
+}

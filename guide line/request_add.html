@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의뢰서 등록</title>
+    <link rel="stylesheet" href="css/requestadd.css">
+    <link href="img/icon.png" rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+    <a href="main.html" class="back-btn">←</a>
+    <h1>DENTRION GUIDE LINE</h1>
+    </header>
+    <div class="content">
+    <h1 id="sec1">1.의뢰서 등록</h1>
+    <p>이 화면은 보철물 의뢰를 등록하는 화면으로 모든 필수 항목(*)을 입력해야 등록이 완료됩니다.</p>
+    <p><strong>[필수 입력 항목]</strong></p>
+    <p>파트너, 의뢰 요청일, 완료 요청일, 환자명, 의뢰 유형, 의뢰 보철물</p>
+    <img id="add1" src="img/request_add/add1.png" alt="의뢰서 등록 사진">
+    <br>
+
+    <h2 id="sec2">1-1. 입력 항목</h2>
+
+    <div class="add-box">
+        <h3 id="sec3">1-1-1.파트너<strong class="required">(필수입력항목)</strong></h3>
+        <p>파트너를 선택하면 다른 항목 입력이 활성화 됩니다.</p>
+        <p>검색란 클릭 시 제조소와 연결된 파트너 목록이 나타납니다.</p>
+        <p>검색 시 단축어와 파트너명 두 가지 모두 검색이 가능합니다.</p>
+        <details>
+            <summary><strong>미리 보기 예시</strong></summary>
+            <p>새로운 팝업창으로 이미지를 확인할 수 있습니다.</p>
+            <video width="800" controls>
+            <source src="img/request_add/partner_search.mp4" type="video/mp4">
+            </video>
+        </details>
+        <br>
+
+        <h3 id="sec4">1-1-2.의뢰 요청일<strong class="required">(필수입력항목)</strong></h3>
+        <p>의뢰 요청일은 보철물 제작을 의뢰하는 날짜입니다.</p>
+        <p><strong>"접속일"</strong>(오늘날짜) 이후의 날짜는 선택할 수 없습니다.</p>
+        <p>날짜는 6자리 형식(YY.MM.DD)으로 직접 입력하거나, 달력 버튼을 통해 선택할 수 있습니다.</p>
+        <details>
+            <summary><strong>달력 클릭 시</strong></summary>
+            <img id="add112" src="img/request_add/add1-1-2.png" alt="달력 클릭 시">
+        </details>
+        <br>
+        
+        <h3 id="sec5">1-1-3.완료 요청일<strong class="required">(필수입력항목)</strong></h3>
+        <p>완료 요청일은 제작된 보철물을 수령할 날짜입니다.</p>
+        <p><strong>의뢰 요청일</strong>의 이후 날짜만 선택할 수 있습니다.</p>
+        <p>날짜는 6자리 형식(YY.MM.DD)으로 직접 입력하거나, 달력 버튼을 통해 선택할 수 있습니다.</p>
+        <details>
+            <summary><strong>달력 클릭 시</strong></summary>
+            <img id="add113" src="img/request_add/add1-1-3.png" alt="달력 클릭 시">
+        </details>
+        <br>
+
+        <h3 id="sec6">1-1-4.환자명<strong class="required">(필수입력항목)</strong></h3>
+        <p>보철물 제작을 의뢰할 환자의 이름을 입력합니다.</p>
+        <p>한글,영문,숫자 입력 가능하며 공백 포함 최대 20글자까지 입력할 수 있습니다.</p>
+        <img id="add114" src="img/request_add/add1-1-4.png" alt="환자명 클릭 시">
+        <br>
+        
+        <h3 id="sec7">1-1-5.의뢰유형<strong class="required">(필수입력항목)</strong></h3>
+        <img id="add115" src="img/request_add/add1-1-5.png" alt="상태 창 클릭 시">
+        <p>1.<strong>[신규]</strong></p>
+        <p>새로운 보철물 제작을 의뢰할 때 선택합니다.</p>
+        <p>기본값으로 자동 설정 되어 있으며 변경 가능합니다.</p>
+        <p>2.<strong>[REMAKE]</strong></p>
+        <p>출고된 보철물에 대해 파손, 변형, 분실 등의 사유로 재제작이 필요한 경우 선택합니다.</p>
+        <p>3.<strong>[REPAIR]</strong></p>
+        <p>출고된 보철물에 대해 간단한 수정이나 보완이 필요한 경우 선택합니다.</p>
+        <p>4.<strong>[ETC]</strong></p>
+        <p>REMAKE 또는 REPAIR 항목에 해당하지 않는 기타 사유로 보철물을 요청할 경우 선택합니다.</p>
+        <br>
+
+        <h3 id="sec8">1-1-6.의뢰 보철물<strong class="required">(필수입력항목)</strong></h3>
+        <p>입력란 클릭 시 의뢰 가능한 보철물 목록이 나타납니다.</p>
+        <p>검색하거나 스크롤 이동으로 의뢰할 보철물을 선택할 수 있습니다.</p>
+        <img id="add116" src="img/request_add/add1-1-6.png" alt="보철물 검색 시">
+        <br>
+
+        <p>&#8251;한 환자에 대해 같은 의뢰 유형의 <strong>여러 보철물을 한 번에 등록할 수 있습니다.</strong>&#8251;</p>
+        <img id="add1162" src="img/request_add/add1-1-6_2.png" alt="여러 보철물 입력 시">
+        <br>
+
+        <h3 id="sec9">1-1-7.보철물별 치식 선택<strong class="required">(필수입력항목)</strong></h3>
+        <p>각 의뢰 보철물마다 최소 하나 이상의 치식을 선택해야 등록이 완료됩니다.</p>
+        <p>선택한 의뢰 보철물의 치식을 선택할 수 있습니다.</p>
+        <img id="add117" src="img/request_add/add1-1-7.png" alt="치식 선택 창">
+        <br>
+
+        <p><strong>· (Implant) Crown & Bridge</strong></p>
+        <p> Single 또는 Bridge 중 치식 선택 유형을 선택할 수 있습니다.</p>
+        <img id="add1172" src="img/request_add/add1-1-7_2.png" alt="크라운 선택 창">
+        <p>1. <strong>[Single]</strong> : 기본값으로 선택되어 있으며 지대치만 선택할 수 있습니다.</p>
+        <p>2. <strong>[Bridge]</strong> : 지대치와 Pontic을 각각 구분하여 선택할 수 있습니다.</p>
+
+        <p><strong>· Denture & Partial</strong></p> 
+        <p> Arch와 Tooth 중 치식 선택 유형을 선택할 수 있습니다.</p>
+        <img id="add1173" src="img/request_add/add1-1-7_3.png" alt="덴쳐 선택 창">
+        <p>1. <strong>[Arch]</strong> : 상악 또는 하악 단위로 기공료를 청구할 경우 선택합니다.</p>
+        <p>2. <strong>[Tooth]</strong> : 치아 단위로 기공료를 청구하는 보철물의 경우 선택합니다.</p>
+
+        <p><strong>· Gold</strong></p>
+        <p> Gold 종류를 선택합니다.</p>
+        <p> 보철물 의뢰와 함께 공급할 Gold가 있는 경우 Gold 공급량을 입력합니다.</p>
+        <img id="add1174" src="img/request_add/add1-1-7_4.png" alt="골드 선택 창">
+
+        <p><strong>· Sugical guide</strong></p>
+        <p> Arch와 Tooth 중 치식 선택 유형을 선택할 수 있습니다.</p>
+        <img id="add1174" src="img/request_add/add1-1-7_5.png" alt="서지컬 가이드 선택 창">
+
+        <p><strong>· Sugical guide additional hole</strong></p>
+        <p>홀 추가 시 선택 가능합니다.</p>
+        <p>Arch 또는 Tooth 중 치식 선택 유형을 선택할 수 있습니다.</p>
+        <img id="add1174" src="img/request_add/add1-1-7_6.png" alt="에디셔널 홀 선택 창">
+        <p>1. <strong>[Arch]</strong> : 상악 또는 하악 단위로 청구되는 보철물에 해당할 경우 선택합니다.</p>
+        <p>2. <strong>[Tooth]</strong> : 치아 단위로 청구되는 보철물의 경우 선택합니다.</p>
+        <br>
+
+    </div>
+
+        <br><br>
+        <div class="add-box">
+        <h3 id="sec10">1-1-8.차트번호<strong class="optional">(선택입력항목)</strong></h3>
+        <p>의뢰하는 환자의 차트 번호를 입력할 수 있습니다.</p>
+        <img id="add118" src="img/request_add/add1-1-8.png" alt="차트번호 입력 창">
+        <br>
+
+        <h3 id="sec11">1-1-9.성별<strong class="optional">(선택입력항목)</strong></h3>
+        <p>의뢰하는 환자의 성별을 선택할 수 있습니다.</p>
+        <img id="add118" src="img/request_add/add1-1-9.png" alt="성별 입력 창">        
+        <br>
+
+        <h3 id="sec12">1-1-10.추가 사항<strong class="optional">(선택입력항목)</strong></h3>
+        <p>보철물 제작에 필요한 항목을 선택할 수 있습니다.<strong class="hint">(다중 선택 가능)</strong></p>
+        <img id="add1110" src="img/request_add/add1-1-10.png" alt="추가 사항 선택 창">
+        <br>
+
+        <h3 id="sec13">1-1-11.전달 사항<strong class="optional">(선택입력항목)</strong></h3>
+        <img id="add1111" src="img/request_add/add1-1-11.png" alt="전달 사항 입력 창">
+        <details>
+            <summary><strong>전달 사항 예시</strong></summary>
+            <video width="800" controls>
+            <source src="img/request_add/message_input.mp4" type="video/mp4">
+            </video>
+        </details>
+        <br>
+
+        <h3 id="sec14">1-1-12.첨부 파일<strong class="optional">(선택입력항목)</strong></h3>
+        <p>치아 쉐이드 사진, 구강 스캔 파일 등 보철물 제작에 필요한 파일을 첨부할 수 있습니다.</p>
+        <p>여러 파일을 업로드 할 수 있으며, 총 용량은 최대 500MB 까지 가능합니다.</p>
+        <img id="add1112" src="img/request_add/add1-1-12.png" alt="첨부파일 추가 창">
+        <br>
+
+        <h3 id="sec15">1-1-13.치식 그리기<strong class="optional">(선택입력항목)</strong></h3>
+        <p>보철물 제작에 필요한 내용을 그림으로 전달할 수 있습니다.</p>
+        <p>총 3가지 색상으로 그릴수 있습니다.</p>
+        <p>실행 취소, 다시 실행, 초기화 기능을 사용 할 수 있습니다.</p>
+        <details>
+            <summary><strong>치식 그리기 예시</strong></summary>
+            <video width="800" controls>
+            <source src="img/request_add/drawing_tooth.mp4" type="video/mp4">
+            </video>
+        </details>
+    </div>
+    <br><br>
+
+    <h2 id="sec16">2-1. 의뢰서 등록</h2>
+    <div class="add-box">
+    <p><strong>필수 입력 항목</strong>을 모두 입력하면 우측 하단의 '의뢰서 등록'버튼이 활성화됩니다.</p>
+    <p>의뢰서 등록 후 의뢰 요청일과 완료 요청일은 그대로 유지되어 바로 다른 의뢰를 계속 등록할 수 있습니다.</p>
+    <details>
+            <summary><strong>의뢰서 등록 완료 예시</strong></summary>
+            <video width="800" controls>
+            <source src="img/request_add/add.mp4" type="video/mp4">
+            </video>
+        </details>
+    </div>
+    <div class="toc">
+  <a href="#sec1">1.의뢰서 등록</a>
+  <a href="#sec2">1-1. 입력 항목</a>  
+  <a href="#sec3">1-1-1.파트너</a>
+  <a href="#sec4">1-1-2.의뢰 요청일</a>
+  <a href="#sec5">1-1-3.완료 요청일</a>
+  <a href="#sec6">1-1-4.환자명</a>
+  <a href="#sec7">1-1-5.의뢰 유형</a>
+  <a href="#sec8">1-1-6.의뢰 보철물</a>
+  <a href="#sec9">1-1-7.보철물별 치식 선택</a>
+  <a href="#sec10">1-1-8.차트번호</a>
+  <a href="#sec11">1-1-9.성별</a>
+  <a href="#sec12">1-1-10.추가사항</a>
+  <a href="#sec13">1-1-11.전달사항</a>
+  <a href="#sec14">1-1-12.첨부파일</a>
+  <a href="#sec15">1-1-13.치식그리기</a>
+  <a href="#sec16">2-1.의뢰서 등록</a>
+</div>
+    <script src="js/notice.js"></script>
+</body>
+</html>

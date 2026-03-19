@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의뢰서 수정</title>
+    <link rel="stylesheet" href="css/guide.css">
+    <link href="img/icon.png" rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+    <a href="main.html" class="back-btn">←</a>
+    <h1>DENTRION GUIDE LINE</h1>
+    </header>
+    <div class="content">
+    <h1 id="sec1">1.의뢰서 수정</h1>
+    <p>이 화면에서는 등록된 의뢰서의 정보를 수정할 수 있습니다.</p>
+    <p><strong>[의뢰서 수정이 가능한 화면]</strong></p>
+    <p>1. <strong>[의뢰서 관리]</strong> : 수정할 의뢰서 검색 후 [의뢰서 수정] 버튼 클릭 시 수정이 가능합니다.</p>
+    <p>2. <strong>[거래명세서 관리]</strong> : 거래명세서 상세 보기에서 수정할 의뢰서 검색 후 [수정] 버튼 클릭 시 수정이 가능합니다.</p>
+    <img id="many3" src="img/request_edit/edit1.png" alt="의뢰서 수정">
+    <br><br>
+
+    <h2 id="sec2">1-1. 의뢰서 관리</h2>
+    <div class="manage-box">
+    <h3 id="sec3">1-1-1. 상세보기 수정</h3>
+    <p>상세 보기 버튼을 클릭하면 해당 의뢰서의 상세 내용을 확인 후 수정할 수 있습니다.</p>
+    <img id="mini" src="img/request_edit/edit1-1-1_1.png" alt="의뢰서 상세보기">
+    <h3 id="sec4">1-1-2. 더보기 수정</h3>
+    <p>상세 보기 하지 않아도 목록 화면에서 바로 의뢰서 수정 화면을 사용할 수 있습니다.</p>
+    <img id="mini" src="img/request_edit/edit1-1-1_2.png" alt="의뢰서 상세보기">
+    <br>
+    </div><br>
+
+    <h2 id="sec5">1-2. 거래명세서 관리</h2>
+    <div class="manage-box">
+    <h3 id="sec6">1-2-1. 거래명세서 상세보기</h3>
+    <p>해당 파트너의 거래명세서 목록에서 수정할 의뢰를 찾아서 바로 의뢰서 수정이 가능합니다.</p>
+            <p>
+            <video width="800" controls>
+            <source src="img/request_edit/edit_statement.mp4" type="video/mp4">
+            </video>
+            </p>
+    </div><br>
+
+    <h2 id="sec7">1-3. 의뢰서 수정</h2>
+    <div class="manage-box">
+    <p><strong>설명</strong></p>
+    <p>의뢰의 모든 항목이 수정이 가능합니다.</p>
+    <p>[정산 완료] 상태 의뢰는 파트너 변경 외에는 수정이 가능합니다.</p>
+    <p>[결제 관리]에서 결제가 완료된 거래명세서에 포함 되있는 의뢰는 수정이 불가합니다.</p>
+    <p>수정 사항이 있는 경우 [저장하기] 버튼이 활성화 됩니다.</p>
+    <p>의뢰서 수정 내역이 있는 경우, 수정 시점과 이전 의뢰서를 히스토리에서 확인할 수 있습니다.</p>
+    <br>
+
+    <h3 id="sec8">1-3-1. 항목별 설명</h3>
+    <p><strong>[파트너]</strong></p>
+    <p>파트너 변경이 가능합니다.</p>
+    <p>파트너 변경 시 해당 파트너 거래명세서에서 의뢰서가 자동으로 제외됩니다.</p>
+    <p>제외된 의뢰서는 변경한 파트너 거래명세서에 자동으로 추가되지 않습니다.</p>
+    <p>변경한 파트너 거래명세서에서 [의뢰서 추가]기능을 통해 의뢰서를 따로 추가해야됩니다.</p>
+    <img id="mini2" src="img/request_edit/edit1-3-1.png" alt="파트너">
+    
+    <p><strong>[의뢰 요청일]</strong></p>
+    <p><strong>‘접속일(오늘 날짜)’ 이후의 날짜는 선택할 수 없습니다.</strong></p>
+    <p>변경한 의뢰 요청일이 파트너 거래명세서 생성 기간에 속하지 않는 경우 자동으로 거래명세서에서 제외되지 않습니다.</p>
+    <p>의뢰 요청일 변경 시 거래명세서에서도 자동으로 수정됩니다.</p>
+    <img id="mini" src="img/request_edit/edit1-3-1_2.png" alt="의뢰 요청일">
+
+    <p><strong>[완료 요청일]</strong></p>
+    <p><strong>의뢰 요청일의 이후 날짜만 선택할 수 있습니다.</strong></p>
+    <p>변경한 완료 요청일이 파트너 거래명세서 생성 기간에 속하지 않는 경우 자동으로 거래명세서에서 제외되지 않습니다.</p>
+    <p>완료 요청일 변경 시 거래명세서에서도 자동으로 수정됩니다.</p>
+    <img id="mini" src="img/request_edit/edit1-3-1_3.png" alt="완료 요청일">
+
+    <p><strong>[환자명]</strong></p>
+    <p>한글, 영문, 숫자 입력 가능하며 공백 포함 최대 20자까지 입력할 수 있습니다.</p>
+    <img id="mini3" src="img/request_edit/edit1-3-1_4.png" alt="환자명">
+
+    <p><strong>[차트번호]</strong></p>
+    <p>의뢰하는 환자의 차트 번호를 수정할 수 있습니다.</p>
+    <img id="mini3" src="img/request_edit/edit1-3-1_5.png" alt="차트번호">
+
+    <p><strong>[성별]</strong></p>
+    <p>의뢰하는 환자의 성별을 수정할 수 있습니다.</p>
+    <img id="mini3" src="img/request_edit/edit1-3-1_6.png" alt="성별">
+
+    <p><strong>[의뢰 유형]</strong></p>
+    <p>신규 유형에서 REMAKE, REPAIR, ETC로 수정하는 경우 의뢰 보철물 단가가 0원으로 변경됩니다.</p>
+    <p>REMAKE, REPAIR, ETC 유형에서 신규로 수정하는 경우 의뢰 보철물 기본 설정된 단가로 변경됩니다.</p>
+    <img id="edit1317" src="img/request_edit/edit1-3-1_7.png" alt="의뢰 유형">
+
+    <p><strong>[추가 사항]</strong></p>
+    <p>보철물 제작에 필요한 항목을 수정할 수 있습니다.</p>
+    <img id="edit1318" src="img/request_edit/edit1-3-1_8.png" alt="추가 사항">
+
+    <p><strong>[의뢰 보철물]</strong></p>
+    <p>의뢰 보철물을 추가 또는 삭제가 가능합니다.</p>
+    <p>의뢰 보철물의 치식을 수정할 수 있습니다.</p>
+    <p>의뢰 보철물의 수량 또는 단가를 수정할 수 있습니다.</p>
+    <img id="edit1319" src="img/request_edit/edit1-3-1_9.png" alt="의뢰 보철물">
+    <details>
+        <summary><strong>의뢰 보철물 수정 시 주의 사항</strong></summary>
+        <p><strong>Q1.작업자가 공정 입력을 완료 후 의뢰 보철물 삭제하는 경우</strong></p>
+        <p>A1.공정 데이터는 남지만, 의뢰 보철물명이 “삭제된 보철물입니다.” 라는 문구로 대체됩니다.</p>
+        <p><strong>Q2.작업자가 공정 입력을 완료 후 의뢰 보철물 수정하는 경우</strong></p>
+        <p>A2.공정 데이터도 남고, 의뢰 보철물명도 정상적으로 보여집니다.</p>
+    </details>
+
+    <p><strong>[전달 사항]</strong></p>
+    <p>치아 쉐이드, 섹션 분리 등 보철물 제작에 필요한 정보를 자유롭게 수정 및 추가할 수 있습니다.</p>
+    <p>전달 사항은 의뢰서 출력 시 노출되는 항목입니다.</p>
+    <img id="edit13110" src="img/request_edit/edit1-3-1_10.png" alt="전달사항">
+
+    <p><strong>[첨부 파일]</strong></p>
+    <p>치아 쉐이드 사진, 구강 스캔 파일 등 보철물 제작에 필요한 파일을 첨부할 수 있습니다.</p>
+    <p>여러 파일을 업로드 할 수 있으며, 총 용량은 최대 500MB 까지 가능합니다.</p>
+    <img id="edit13110" src="img/request_edit/edit1-3-1_11.png" alt="첨부 파일">
+
+    <p><strong>[비고]</strong></p>
+    <p>제조소에서만 확인이 가능한 특이사항을 자유롭게 수정 및 추가할 수 있습니다.</p>
+    <img id="edit13110" src="img/request_edit/edit1-3-1_12.png" alt="비고">
+    <br>
+    </div>
+    </div>
+    <div class="toc">
+  <a href="#sec1">1.의뢰서 수정</a>
+  <a href="#sec2">1-1.의뢰서 관리</a>  
+  <a href="#sec3">1-1-1.상세보기 수정</a>
+  <a href="#sec4">1-1-2.더보기 수정</a>
+  <a href="#sec5">1-2.거래명세서 관리</a>
+  <a href="#sec6">1-2-1.거래명세서 상세보기</a>
+  <a href="#sec7">1-3.의뢰서 수정</a>
+  <a href="#sec8">1-3-1.항목별 설명</a>
+    </div>
+    <script src="js/notice.js"></script>
+</body>
+</html>

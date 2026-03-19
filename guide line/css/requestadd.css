@@ -1,0 +1,192 @@
+h1 {
+    color: #44c18d;
+    text-align:center;
+}
+h2 {
+    color: #44c18d;
+    text-align: center;
+}
+h3 {
+    color: #44c18d;
+    text-align: center;
+}
+.required {
+    color: red;
+}
+.optional {
+    color: green;
+}
+.hint {
+    color: #888;
+}
+
+header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.back-btn{
+    position: absolute;
+    left: 20px;   
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    text-align:center;
+}
+
+details {
+    text-align: center;
+}
+
+.add-box {
+    background-color: #f5f5f5;
+}
+
+.toc{
+    position:fixed;
+    right:30px;
+    top:120px;
+    width:200px;
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+
+.toc a{
+    display:block;
+    padding:6px;
+    text-decoration:none;
+    color:#444;
+    font-size:13px;
+}
+
+.toc a:hover{
+    background: lightgrey;
+    border-radius:5px;
+}
+
+.toc a.active{
+    color: #b0e5cf;
+    font-weight:bold;
+}
+
+  .content { 
+    padding:30px; 
+    max-width:1300px;
+    margin:0 auto; 
+}
+
+#add1 {
+    width:900px;
+    height: 460px;
+    display: block;
+    margin: 0 auto;
+}
+
+#add112 {
+    width:378px;
+    height: 476px;
+    display: block;
+    margin: 0 auto;
+}
+
+#add113 {
+    width: 474px;
+    height: 470px;
+    display: block;
+    margin: 0 auto;
+}
+
+#add114 {
+    width: 270px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+#add115 {
+    width: 260px;
+    height: 230px;
+    display: block;
+    margin: 0 auto;
+}
+
+#add116 {
+    width: 900px;
+    height: 332px;
+    display: block;
+    margin: 0 auto;
+}
+
+#add1162 {
+    width: 900px;
+    height: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+#add117 {
+    width: 900px;
+    height: 212px;
+    display: block;
+    margin: 0 auto;
+}
+
+#add1172 {
+    width: 900px;
+    height: 427px;
+    display: block;
+    margin: 0 auto;
+}
+
+#add1173 {
+    width: 900px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+}
+
+#add1174 {
+    width: 900px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+#add118 {
+    width: 250px;
+    height: 53px;
+    display: block;
+    margin: 0 auto;
+}
+
+#add1110 {
+    width: 700px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+#add1111 {
+    width: 900px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+#add1112 {
+    width: 260px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+}
